@@ -1,0 +1,19 @@
+<div class="container py-5">
+    <div class="col-md-6 mx-auto">
+        <div class="card p-4 shadow-lg border-0">
+            <h2 class="text-center text-warning mb-4">Editar Usuário</h2>
+            <form action="/usuario/atualizar/{{user.id}}" method="POST">
+                <div class="mb-3">
+                    <label class="form-label">Nome:</label>
+                    <input type="text" id="name" name="name" class="form-control" value="{{user.first_name}} {{user.last_name}}" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Cargo:</label>
+                    <input type="text" id="job" name="job" class="form-control" placeholder="Informe o cargo" required>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">Atualizar</button>
+            </form>
+            <a href="/usuarios" class="btn btn-link mt-3 text-center">Voltar para lista</a>
+        </div>
+    </div>
+</div>

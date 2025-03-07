@@ -1,0 +1,19 @@
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="card shadow-lg border-0">
+                <div class="card-body text-center">
+                    <img src="{{user.avatar}}" alt="Avatar" class="rounded-circle shadow mb-3" width="150" height="150">
+                    <h2 class="fw-bold">{{user.first_name}} {{user.last_name}}</h2>
+                    <p class="text-muted">{{user.email}}</p>
+                    <hr>
+                    <div class="d-flex justify-content-around">
+                        <a href="/usuarios" class="btn btn-outline-secondary">Voltar</a>
+                        <a href="/usuario/editar/{{user.id}}" class="btn btn-warning">Editar</a>
+                        <a href="/usuario/deletar/{{user.id}}" class="btn btn-danger">Excluir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

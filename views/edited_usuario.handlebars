@@ -1,0 +1,19 @@
+<div class="container py-5">
+    <div class="col-md-6 mx-auto">
+        <div class="card p-4 shadow-lg border-0 text-center">
+            <h2 class="text-warning">Usuário Editado com Sucesso</h2>
+            <ul class="list-group list-group-flush text-start">
+                <li class="list-group-item d-flex justify-content-between">
+                    <strong>Nome:</strong> <span>{{user.name}}</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <strong>Cargo:</strong> <span>{{user.job}}</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <strong>Atualizado em:</strong> <span>{{user.updatedAt}}</span>
+                </li>
+            </ul>
+            <a href="/usuarios" class="btn btn-primary mt-3">Ver lista de usuários</a>
+        </div>
+    </div>
+</div>
